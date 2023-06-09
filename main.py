@@ -9,9 +9,9 @@ sur_list1=['Impaction Case1', 'Impaction Case1', 'Impaction Case1', 'Impaction C
 sur_list2=['Clinical Picture before surgery', 'X-ray before surgery', 'X-ray after surgery', 'After suturing',
            'X-ray before surgery', 'X-ray after surgery', 'X-ray before surgery', 'Clinical Picture after extraction',
            'Clinical Picture after extraction', 'Clinical Picture after extraction' ]
-end_list1 = ["Upper 6", "Lower 6", "Upper 6", "Lower 6", "Lower 6,7", "Upper Central", "Upper 6", "Lower6", "Lower 7", "Lower 5",
-             "Lower 6", "Upper 6"]
-end_list2= ["retreatment of pulpotec case(calcified canals)", "tooth bud", "Mb2", "suuuuuper tight canals", "bypass", " ", " ", " ", " "," ", " ", "MB2"]
+end_list1 = ["Upper 6", "Lower 6", "Upper 6", "Lower 6", "Lower 6,7", "Upper Central", "Upper 6", "Upper 6", "Lower 7", "Lower 5",
+             "Lower 6", ]
+end_list2= ["retreatment of pulpotec case(calcified canals)", "tooth bud", "Mb2", "suuuuuper tight canals", "bypass", " ", " ", "MB2", " "," ", " ",]
 fix_list1= [""]
 fix_list2= ['']
 
