@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{hi}} Cases</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/Cases/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/Cases/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload-0 is-preload-1 is-preload-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>{{hi}}</h1>
+
+					</header>
+
+				<!-- Thumbnail -->
+					<section id="thumbnails">
+
+							{%for i in range(titles1):%}
+
+								<article>
+									<a class="thumbnail" href="{{file}}/fulls/0{{i}}.jpg" data-position="left center"><img src="{{file}}/thumbs/0{{i}}.jpg" alt="" /></a>
+									<h2>{{talk[i]}}</h2>
+									<p>{{talk1[i]}}</p>
+								</article>
+							{%endfor%}
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						&copy; Al-hassan Habib
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/Cases/assets/js/jquery.min.js"></script>
+			<script src="../static/Cases/assets/js/browser.min.js"></script>
+			<script src="../static/Cases/assets/js/breakpoints.min.js"></script>
+			<script src="../static/Cases/assets/js/main.js"></script>
+
+	</body>
+</html>
