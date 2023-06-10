@@ -11,7 +11,12 @@ sur_list2=['Clinical Picture before surgery', 'X-ray before surgery', 'X-ray aft
            'Clinical Picture after extraction', 'Clinical Picture after extraction' ]
 end_list1 = ["Upper 6", "Lower 6", "Upper 6", "Lower 6", "Lower 6,7", "Upper Central", "Upper 6", "Upper 6", "Lower 7", "Lower 5",
              "Lower 6", ]
-end_list2= ["retreatment of pulpotec case(calcified canals)", "tooth bud", "Mb2", "suuuuuper tight canals", "bypass", " ", " ", "MB2", " "," ", " ",]
+end_list2= ["retreatment of pulpotec case(calcified canals)", "tooth bud", "Mb2", "suuuuuper tight canals", "bypass", " ", " ", "MB2", " "," ", " "]
+ped_list1 = ["Pulpotomy", "Pulpotomy", "Pulpectomy", "Pulpectomy", "Pulpectomy", "SSC", " Happy Patient :)"]
+ped_list2 = ["", "", "", "", "", "", ""]
+op_list1 = ["Double Class 2", "After restoration", "Double Class 2", "After restoration", "Class 1", "Removing caries",
+            "After restoration", "Class 3", "After restoration", "Replacement of old restoration", "After restoration"]
+op_list2 = ["", "", "", "", "", "", "", "", "", "", "", ]
 fix_list1= [""]
 fix_list2= ['']
 
@@ -35,13 +40,13 @@ def endo():
 
 @app.route("/Operative")
 def operative():
-    return render_template("cases.html", hi="Operative", file="static/Cases/images/fixed", titles1=len(fix_list1),
-                           talk=fix_list1, talk1=fix_list2)
+    return render_template("cases.html", hi="Operative", file="static/Cases/images/operative", titles1=len(op_list1),
+                           talk=op_list1, talk1=op_list2)
 
 @app.route("/Fixed")
-def fixed():
-    return render_template("cases.html", hi="Fixed", file="static/Cases/images/fixed", titles1=len(fix_list1),
-                           talk=fix_list1, talk1=fix_list2)
+def pedo():
+    return render_template("cases.html", hi="pedo", file="static/Cases/images/pedo", titles1=len(ped_list1),
+                           talk=ped_list1, talk1=ped_list2)
 
 if __name__ == "__main__":
     app.run(debug=True)
